@@ -492,6 +492,12 @@ export default function Home() {
                 <li><a href="mailto:info@gharaarogyam.in">info@gharaarogyam.in</a></li>
                 <li><a href="tel:+919876543210">+91 98765 43210</a></li>
               </ul>
+              <h5 style={{ marginTop: '24px' }}>Address</h5>
+              <p style={{ fontSize: '13.5px', lineHeight: '1.6', color: 'var(--text-soft)' }}>
+                First Floor, 106, Block B<br />
+                Unnamed Road, Near Surkh Juttis and Handmade Creations<br />
+                Tilahri, Jabalpur, Madhya Pradesh 482020
+              </p>
             </div>
           </div>
           <div className="footer-disclaimer">
