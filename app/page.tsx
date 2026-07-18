@@ -27,7 +27,7 @@ export default function Home() {
       <section style={{ background: "linear-gradient(135deg, #BAEAF7 0%, #ECEFF1 100%)" }} className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-20 flex flex-col md:flex-row items-center gap-14">
           <div className="w-full md:flex-1 space-y-6">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-white/40 text-black text-xs font-bold tracking-widest uppercase">
+            <div className="inline-block px-4 py-1.5 rounded-full text-white text-xs font-bold tracking-widest uppercase" style={{ backgroundColor: "#FF9800" }}>
               WELCOME TO GHAR AAROGYAM
             </div>
             <h1 className="text-4xl md:text-6xl font-black leading-tight" style={{ color: "#7CC043" }}>
@@ -71,15 +71,20 @@ export default function Home() {
       <section className="py-20 bg-white" id="why-us">
         <div className="max-w-7xl mx-auto px-5 md:px-20">
           <div className="text-center mb-14">
-            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>WHY CHOOSE US</div>
-            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Why choose Ghar Aarogyam?</h2>
+            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>why choose Ghar Aarogyam
+              programme …</div>
+            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Because your Health Story is unique</h2>
             <p className="mt-3 text-black/60 text-sm" style={{ display: "block", width: "100%" }}>We understand managing health can be overwhelming. We make it simpler.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
-              { icon: "schedule", title: "Timely Guidance", desc: "Get the right advice exactly when you need it, avoiding unnecessary confusion and delays." },
-              { icon: "psychology", title: "Emotional Support", desc: "Mental well-being is crucial to recovery. We offer compassionate emotional care throughout." },
-              { icon: "home_health", title: "Care at Home", desc: "Access professional healthcare assistance from your home, without repeated hospital visits." },
+              { icon: "speed", title: "Faster Response", desc: "Just one Click away Patient-centric support services" },
+              { icon: "emergency", title: "Reduced Response Time", desc: "Critical in saving lives during emergencies [Panic Button]" },
+              { icon: "support_agent", title: "One-on-One Guidance", desc: "Guidance from qualified healthcare professionals" },
+              { icon: "psychology", title: "Smart AI solutions", desc: "For seamless healthcare delivery" },
+              { icon: "all_inclusive", title: "Holistic Support", desc: "Works alongside nutrition, psychological, and medical advice." },
+              { icon: "groups", title: "Family Assurance", desc: "Caregivers and loved ones are notified instantly." },
+              { icon: "volunteer_activism", title: "Emotional Connection", desc: "Counsellors provide compassionate listening." },
             ].map((item) => (
               <div key={item.title} className="bg-white border-2 rounded-2xl p-8 hover:shadow-xl transition-shadow" style={{ borderColor: "#ECEFF1" }}>
                 <div className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-5" style={{ backgroundColor: "#BAEAF7" }}>
@@ -129,28 +134,28 @@ export default function Home() {
       <section className="py-20" style={{ backgroundColor: "#BAEAF7" }}>
         <div className="max-w-7xl mx-auto px-5 md:px-20 flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1 hidden md:block">
-            <div className="bg-white/20 rounded-3xl p-10 text-center">
+            <div className="bg-white rounded-3xl p-10 text-center shadow-sm">
               <div className="text-7xl mb-4">🏠</div>
-              <p className="text-xl font-bold text-white">Healthcare at home,<br />dignity always.</p>
+              <p className="text-xl font-bold text-black">Healthcare at home,<br />dignity always.</p>
             </div>
           </div>
           <div className="flex-1 w-full space-y-8">
-            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-black" style={{ backgroundColor: "#ECEFF1" }}>WHAT SETS US APART</div>
+            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-white" style={{ backgroundColor: "#FF9800" }}>WHAT SETS US APART</div>
             <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>How Ghar Aarogyam<br />Stands Apart?</h2>
             <ul className="space-y-6">
               {[
-                { icon: "verified", title: "Tailored for You", desc: "Every patient's journey is unique. We provide customized care plans, not one-size-fits-all advice." },
-                { icon: "all_inclusive", title: "Holistic Approach", desc: "We focus on physical, mental, and emotional well-being simultaneously for complete recovery." },
-                { icon: "translate", title: "Bridging the Gap", desc: "Translating complex clinical advice into simple, practical, daily healthy living habits." },
+                { icon: "thumb_up", title: "Feel supported and motivated by our Healthcare Experts" },
+                { icon: "science", title: "Practices clinical backed modern science" },
+                { icon: "account_tree", title: "Unified patient support service under one roof" },
+                { icon: "security", title: "100% safe, Private and Secure" },
+                { icon: "lock", title: "100% Maintain Confidentiality" },
+                { icon: "timer_off", title: "No Queue. No waiting" },
               ].map((item) => (
-                <li key={item.title} className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0 mt-1" style={{ backgroundColor: "#FF9800" }}>
+                <li key={item.title} className="flex gap-4 items-center">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0" style={{ backgroundColor: "#FF9800" }}>
                     <span className="material-symbols-outlined text-[18px]">{item.icon}</span>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-white text-base mb-1">{item.title}</h3>
-                    <p className="text-white/80 text-sm leading-relaxed">{item.desc}</p>
-                  </div>
+                  <h3 className="font-bold text-black text-base">{item.title}</h3>
                 </li>
               ))}
             </ul>
@@ -162,7 +167,7 @@ export default function Home() {
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-5 md:px-20 text-center mb-12">
           <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>FAMILIES SPEAK</div>
-          <h2 className="text-3xl md:text-4xl font-black text-black">Real stories, simple support</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-black">Real stories, Real Experiences … help people feel more confident </h2>
         </div>
         <div className="flex gap-6" style={{ display: "flex", width: "max-content", animation: "scroll 35s linear infinite", maskImage: "linear-gradient(to right, transparent 0, black 120px, black calc(100% - 120px), transparent 100%)", WebkitMaskImage: "linear-gradient(to right, transparent 0, black 120px, black calc(100% - 120px), transparent 100%)" }}>
           {[...testimonials, ...testimonials].map((t, i) => (
@@ -186,13 +191,13 @@ export default function Home() {
       {/* ── 6. WHERE WE SERVE (scrolling) — bg: #ECEFF1 ── */}
       <section className="py-20 overflow-hidden" style={{ backgroundColor: "#ECEFF1" }}>
         <div className="max-w-7xl mx-auto px-5 md:px-20 text-center mb-12">
-          <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#BAEAF7" }}>WHERE WE SERVE</div>
+          <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>WHERE WE SERVE</div>
           <h2 className="text-3xl md:text-4xl font-black text-black">Now supporting families across<br />Madhya Pradesh</h2>
         </div>
         <div className="flex gap-6" style={{ display: "flex", width: "max-content", animation: "scroll 25s linear infinite reverse", maskImage: "linear-gradient(to right, transparent 0, black 120px, black calc(100% - 120px), transparent 100%)", WebkitMaskImage: "linear-gradient(to right, transparent 0, black 120px, black calc(100% - 120px), transparent 100%)" }}>
           {[...cities, ...cities].map((c, i) => (
             <div key={i} className="w-[250px] flex-shrink-0 bg-white rounded-2xl p-5 border" style={{ borderColor: "#ECEFF1" }}>
-              <h4 className="font-bold text-sm flex items-center gap-1 mb-3" style={{ color: "#BAEAF7" }}>
+              <h4 className="font-bold text-sm flex items-center gap-1 mb-3 text-black">
                 <span className="material-symbols-outlined text-[16px]" style={{ color: "#FF9800" }}>location_on</span>
                 {c.division}
               </h4>
@@ -206,18 +211,91 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 7. GET IN TOUCH — bg: #BAEAF7 ── */}
-      <section className="py-20" style={{ backgroundColor: "#BAEAF7" }}>
-        <div className="max-w-xl mx-auto px-5 text-center space-y-5">
-          <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-black" style={{ backgroundColor: "#ECEFF1" }}>REACH OUT</div>
-          <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Get in Touch</h2>
-          <p className="text-white/90 leading-relaxed text-sm" style={{ display: "block", width: "100%" }}>
-            Ready to start your wellness journey? Our team is always here to help you navigate your path to better health.
-          </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 text-white font-bold px-10 py-4 rounded-full shadow-lg text-base transition-all hover:opacity-90" style={{ backgroundColor: "#FF9800" }}>
-            <span className="material-symbols-outlined text-[18px]">mail</span>
-            Contact Us
-          </Link>
+      {/* ── 7. GET IN TOUCH inline — bg: #ECEFF1 ── */}
+      <section className="py-20" style={{ backgroundColor: "#ECEFF1" }} id="contact">
+        <div className="max-w-6xl mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-12 items-center">
+
+          {/* Left: Text */}
+          <div className="w-full lg:w-5/12 space-y-6">
+            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-white" style={{ backgroundColor: "#FF9800" }}>REACH OUT</div>
+            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Get in Touch</h2>
+            <p className="text-black/70 leading-relaxed text-sm" style={{ display: "block", width: "100%" }}>
+              Have any queries about our services? Please email or WhatsApp us and our team will get back to you shortly.
+            </p>
+            <div className="space-y-4 pt-2">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0" style={{ backgroundColor: "#7CC043" }}>
+                  <span className="material-symbols-outlined text-[18px]">mail</span>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-black/40 uppercase tracking-wider">Email Us</div>
+                  <div className="font-semibold text-black text-sm">info@gharaarogyam.in</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0" style={{ backgroundColor: "#7CC043" }}>
+                  <span className="material-symbols-outlined text-[18px]">call</span>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-black/40 uppercase tracking-wider">Call Us</div>
+                  <div className="font-semibold text-black text-sm">1-800-AAROGYAM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Form */}
+          <div className="w-full lg:w-7/12 bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
+            <h3 className="text-lg font-black text-black mb-6">Send us a message</h3>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const fd = new FormData(e.currentTarget);
+                const name = fd.get("name") as string;
+                const msg = fd.get("message") as string;
+                window.open(`https://wa.me/919876543210?text=${encodeURIComponent(`Hi, I'm ${name}. ${msg}`)}`, "_blank");
+              }}
+              className="space-y-4"
+            >
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-black/50 uppercase tracking-wider mb-2">Full Name *</label>
+                  <input name="name" required placeholder="e.g. Ramesh Sharma" className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-black focus:outline-none focus:ring-2" style={{ ['--tw-ring-color' as string]: '#7CC043' }} />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-black/50 uppercase tracking-wider mb-2">Phone</label>
+                  <input name="phone" type="tel" placeholder="+91 98765 43210" className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-black focus:outline-none focus:ring-2" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-black/50 uppercase tracking-wider mb-2">Email *</label>
+                <input name="email" type="email" required placeholder="e.g. ramesh@email.com" className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-black focus:outline-none focus:ring-2" />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-black/50 uppercase tracking-wider mb-2">Message *</label>
+                <textarea name="message" required rows={4} placeholder="Tell us how we can help you..." className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-black focus:outline-none focus:ring-2 resize-none" />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <a
+                  href="mailto:info@gharaarogyam.in"
+                  className="flex items-center justify-center gap-2 text-white font-bold py-3.5 rounded-full text-sm shadow-md transition-all hover:opacity-90"
+                  style={{ backgroundColor: "#FF9800" }}
+                >
+                  <span className="material-symbols-outlined text-[16px]">mail</span>
+                  Send via Email
+                </a>
+                <button
+                  type="submit"
+                  className="flex items-center justify-center gap-2 text-white font-bold py-3.5 rounded-full text-sm shadow-md transition-all hover:opacity-90"
+                  style={{ backgroundColor: "#25D366" }}
+                >
+                  <svg className="w-4 h-4 fill-white flex-shrink-0" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                  Send via WhatsApp
+                </button>
+              </div>
+            </form>
+          </div>
+
         </div>
       </section>
 

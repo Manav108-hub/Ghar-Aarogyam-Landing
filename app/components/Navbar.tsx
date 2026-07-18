@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center max-w-7xl mx-auto px-5 md:px-20 py-3">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.jpeg" alt="Ghar Aarogyam Logo" width={40} height={40} className="object-contain rounded-full" />
-            <span className="font-black text-xl text-[#7CC043]">Ghar Aarogyam</span>
+            <span className="font-black text-xl"><span className="text-[#7CC043]">Ghar </span><span className="text-[#FF9800]">Aarogyam</span></span>
           </Link>
 
           {/* Desktop links */}
