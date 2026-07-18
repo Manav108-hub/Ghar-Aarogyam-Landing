@@ -9,8 +9,8 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-4">
             <Image src="/logo.jpeg" alt="Ghar Aarogyam" width={45} height={45} className="rounded-full bg-white p-1 object-contain" />
             <span className="font-black text-xl">
-              <span className="text-white">Ghar </span>
-              <span className="text-[#FF9800]">Aarogyam</span>
+              <span className="font-black text-xl"><span className="text-[#7CC043]">Ghar </span><span className="text-[#FF9800]">Aarogyam</span></span>
+              <span className="text-sm text-gray-400 p-2">by Sewath&trade;</span>
             </span>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-2">

@@ -54,20 +54,17 @@ export default function FAQ() {
 
       {/* FAQs */}
       <section className="py-16">
-        <div className="max-w-3xl mx-auto px-5">
-          <div className="space-y-3">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-6 items-start">
             {faqs.map((faq, i) => (
-              <details key={i} className="group cursor-pointer">
-                <summary className="flex items-center justify-between p-6 font-bold text-gray-800 text-base">
-                  <span className="flex items-center gap-3 text-left">
-                    <span className="w-7 h-7 rounded-full bg-[#FF9800] text-white text-xs font-black flex items-center justify-center flex-shrink-0">
-                      {i + 1}
-                    </span>
+              <details key={i} className="group cursor-pointer border-b border-gray-200">
+                <summary className="flex items-center justify-between py-5 font-bold text-[#0056b3] text-base">
+                  <span className="flex items-center text-left pr-4">
                     {faq.q}
                   </span>
-                  <span className="material-symbols-outlined text-[#7CC043] transition-transform group-open:rotate-180 flex-shrink-0 ml-4">expand_more</span>
+                  <span className="material-symbols-outlined text-[#7CC043] transition-transform group-open:rotate-180 flex-shrink-0">expand_more</span>
                 </summary>
-                <div className="px-6 pb-6 pt-3 text-gray-600 text-sm leading-relaxed">
+                <div className="pb-6 text-gray-700 text-sm leading-relaxed pr-8">
                   {faq.a}
                 </div>
               </details>

@@ -13,17 +13,18 @@ export default function Navbar() {
         <div className="flex justify-between items-center max-w-7xl mx-auto px-5 md:px-20">
           <div className="flex items-center gap-4 font-semibold">
             <span className="flex items-center gap-1">
-              <span className="material-symbols-outlined text-[14px]">call</span>
+              {/* <span className="material-symbols-outlined text-[14px]">call</span>
               1-800-AAROGYAM
+            </span> */}
+              <span className="hidden sm:inline opacity-40">|</span>
+              <a href="mailto:info@gharaarogyam.in" className="hidden sm:flex items-center gap-1">
+                <span className="material-symbols-outlined text-[14px] text-[#0056b3]">mail</span>
+                <span className="text-[#0056b3]">info@gharaarogyam.in</span>
+              </a>
             </span>
-            <span className="hidden sm:inline opacity-40">|</span>
-            <a href="mailto:info@gharaarogyam.in" className="hidden sm:flex items-center gap-1 hover:text-white/80 transition-colors">
-              <span className="material-symbols-outlined text-[14px]">mail</span>
-              info@gharaarogyam.in
-            </a>
           </div>
           <div className="flex items-center gap-3">
-            <span className="hidden sm:inline font-semibold opacity-80">Follow Us:</span>
+            <span className="hidden sm:inline font-semibold opacity-80 text-[#7CC043]">Follow Us:</span>
             <a
               href="https://www.instagram.com/gharaarogyam"
               target="_blank"
@@ -51,6 +52,7 @@ export default function Navbar() {
             <Link href="/" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Home</Link>
             <Link href="/mission" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Our Mission</Link>
             <Link href="/faq" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">FAQs</Link>
+            <Link href="/contact" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Contact</Link>
           </div>
 
           <Link

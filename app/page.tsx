@@ -100,29 +100,58 @@ export default function Home() {
 
       {/* ── 3. UNIQUE SERVICES — bg: #ECEFF1 ── */}
       <section className="py-20" style={{ backgroundColor: "#ECEFF1" }} id="services">
-        <div className="max-w-3xl mx-auto px-5 md:px-10">
+        <div className="max-w-6xl mx-auto px-5 md:px-10">
           <div className="text-center mb-12">
             <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>WHAT WE OFFER</div>
-            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Unique Services</h2>
+            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Our Unique Services</h2>
           </div>
-          <div className="space-y-3">
+          
+          <div className="hidden md:grid grid-cols-3 grid-rows-3 gap-6 items-stretch max-w-5xl mx-auto relative">
             {[
-              { title: "Sanjeevani — Expert Diet Consultation", desc: "Tailored dietary advice crafted by specialists to suit your health goals and medical history, aiding faster recovery and sustained wellness." },
-              { title: "Mitra — Psychological Counseling", desc: "Compassionate mental health support to help patients and caregivers navigate the emotional stress of managing health conditions." },
-              { title: "Margdarshak — Health Coach", desc: "A dedicated health partner to guide you through your care journey, monitor progress, and ensure adherence to prescribed treatment plans." },
-              { title: "Suraksha — Panic Button", desc: "One-tap emergency alert that instantly notifies your family and connects you to emergency services in critical moments." },
-              { title: "Smriti — Medicine Reminders", desc: "Smart, personalized medication reminders so you never miss a dose and stay on track with your treatment plan." },
-            ].map((svc, i) => (
-              <details key={i} className="group bg-white rounded-xl overflow-hidden border cursor-pointer hover:shadow-md transition-shadow" style={{ borderColor: "#ECEFF1" }}>
-                <summary className="flex items-center justify-between p-5 font-bold text-black text-sm">
-                  <span className="flex items-center gap-3">
-                    <span className="w-7 h-7 rounded-full text-white text-xs font-black flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "#FF9800" }}>{i + 1}</span>
-                    {svc.title}
-                  </span>
-                  <span className="material-symbols-outlined transition-transform group-open:rotate-180 flex-shrink-0" style={{ color: "#BAEAF7" }}>expand_more</span>
+              { id: "Sanjeevani", type: "Expert Diet Consultation", icon: "local_dining", pos: "col-start-1 row-start-1", desc: "Tailored dietary advice crafted by specialists to suit your health goals and medical history, aiding faster recovery." },
+              { id: "Mitra", type: "Psychological Counseling", icon: "psychology", pos: "col-start-3 row-start-1", desc: "Compassionate mental health support to help patients and caregivers navigate the emotional stress of managing health." },
+              { id: "Suraksha", type: "Panic Button", icon: "emergency", pos: "col-start-2 row-start-2", desc: "One-tap emergency alert that instantly notifies your family and connects you to emergency services in critical moments.", isCenter: true },
+              { id: "Margdarshak", type: "Health Coach", icon: "directions_walk", pos: "col-start-1 row-start-3", desc: "A dedicated health partner to guide you through your care journey, monitor progress, and ensure adherence." },
+              { id: "Smriti", type: "Medicine Reminders", icon: "medication", pos: "col-start-3 row-start-3", desc: "Smart, personalized medication reminders so you never miss a dose and stay on track with your treatment plan." },
+            ].map((svc) => (
+              <details key={svc.id} className={`group ${svc.pos} ${svc.isCenter ? "bg-[#FF9800] text-white shadow-xl transform scale-110 z-10" : "bg-white border border-gray-200 shadow-sm text-black"} p-6 rounded-3xl transition-transform hover:-translate-y-1 cursor-pointer outline-none marker:content-none`}>
+                <summary className="flex flex-col items-center text-center justify-center list-none outline-none [&::-webkit-details-marker]:hidden">
+                  <span className={`material-symbols-outlined text-5xl mb-4 ${svc.isCenter ? "text-white" : "text-[#7CC043]"}`}>{svc.icon}</span>
+                  <h3 className={`font-black text-xl mb-1 ${svc.isCenter ? "text-white" : "text-black"}`}>{svc.id}</h3>
+                  <div className={`text-xs font-bold uppercase tracking-wider ${svc.isCenter ? "text-white/90" : "text-[#FF9800]"}`}>{svc.type}</div>
+                  <span className="material-symbols-outlined mt-4 transition-transform group-open:rotate-180" style={{ color: svc.isCenter ? "rgba(255,255,255,0.7)" : "#BAEAF7" }}>expand_more</span>
                 </summary>
-                <div className="px-5 pb-5 pt-3 text-black/70 text-sm leading-relaxed border-t" style={{ borderColor: "#ECEFF1" }}>
-                  {svc.desc}
+                <div className={`pt-4 mt-4 border-t ${svc.isCenter ? "border-white/20" : "border-gray-100"}`}>
+                  <p className={`text-sm leading-relaxed text-center ${svc.isCenter ? "text-white/90" : "text-black/70"}`}>{svc.desc}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+
+          {/* Mobile layout */}
+          <div className="md:hidden space-y-4">
+             {[
+              { id: "Suraksha", type: "Panic Button", icon: "emergency", desc: "One-tap emergency alert that instantly notifies your family and connects you to emergency services in critical moments.", isCenter: true },
+              { id: "Sanjeevani", type: "Expert Diet Consultation", icon: "local_dining", desc: "Tailored dietary advice crafted by specialists to suit your health goals and medical history." },
+              { id: "Mitra", type: "Psychological Counseling", icon: "psychology", desc: "Compassionate mental health support to help patients and caregivers navigate the emotional stress." },
+              { id: "Margdarshak", type: "Health Coach", icon: "directions_walk", desc: "A dedicated health partner to guide you through your care journey." },
+              { id: "Smriti", type: "Medicine Reminders", icon: "medication", desc: "Smart, personalized medication reminders so you never miss a dose." },
+            ].map((svc) => (
+              <details key={svc.id} className={`group ${svc.isCenter ? "bg-[#FF9800] text-white" : "bg-white text-black border border-gray-200"} p-5 rounded-2xl shadow-sm cursor-pointer outline-none marker:content-none`}>
+                <summary className="flex items-center justify-between outline-none list-none [&::-webkit-details-marker]:hidden">
+                  <div className="flex gap-4 items-center">
+                    <div className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 ${svc.isCenter ? "bg-white/20" : "bg-[#f4f4f4]"}`}>
+                      <span className={`material-symbols-outlined text-2xl ${svc.isCenter ? "text-white" : "text-[#7CC043]"}`}>{svc.icon}</span>
+                    </div>
+                    <div>
+                      <h3 className={`font-black text-lg ${svc.isCenter ? "text-white" : "text-black"}`}>{svc.id}</h3>
+                      <div className={`text-[10px] font-bold uppercase tracking-wider ${svc.isCenter ? "text-white/80" : "text-[#FF9800]"}`}>{svc.type}</div>
+                    </div>
+                  </div>
+                  <span className="material-symbols-outlined transition-transform group-open:rotate-180 flex-shrink-0 ml-4" style={{ color: svc.isCenter ? "rgba(255,255,255,0.7)" : "#BAEAF7" }}>expand_more</span>
+                </summary>
+                <div className={`mt-4 pt-4 border-t ${svc.isCenter ? "border-white/20" : "border-gray-100"}`}>
+                  <p className={`text-xs leading-relaxed ${svc.isCenter ? "text-white/90" : "text-black/70"}`}>{svc.desc}</p>
                 </div>
               </details>
             ))}
@@ -212,6 +241,7 @@ export default function Home() {
       </section>
 
       {/* ── 7. GET IN TOUCH inline — bg: #ECEFF1 ── */}
+      {false && (
       <section className="py-20" style={{ backgroundColor: "#ECEFF1" }} id="contact">
         <div className="max-w-6xl mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-12 items-center">
 
@@ -298,9 +328,9 @@ export default function Home() {
               </div>
             </form>
           </div>
-
         </div>
       </section>
+      )}
 
     </main>
   );
