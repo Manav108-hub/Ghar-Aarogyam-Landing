@@ -217,11 +217,14 @@ export default function Home() {
 
           {/* Left: Text */}
           <div className="w-full lg:w-5/12 space-y-6">
-            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-white" style={{ backgroundColor: "#FF9800" }}>REACH OUT</div>
-            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Get in Touch</h2>
-            <p className="text-black/70 leading-relaxed text-sm" style={{ display: "block", width: "100%" }}>
+            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-white" style={{ backgroundColor: "#FF9800" }}>CONTACT US</div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#0f172a] leading-tight">
+              Let's start your <br />
+              <span style={{ color: "#7CC043" }}>wellness journey</span> together
+            </h2>
+            {/* <p className="text-black/70 leading-relaxed text-sm" style={{ display: "block", width: "100%" }}>
               Have any queries about our services? Please email or WhatsApp us and our team will get back to you shortly.
-            </p>
+            </p> */}
             <div className="space-y-4 pt-2">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0" style={{ backgroundColor: "#7CC043" }}>
@@ -237,8 +240,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[18px]">call</span>
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-black/40 uppercase tracking-wider">Call Us</div>
-                  <div className="font-semibold text-black text-sm">1-800-AAROGYAM</div>
+                  <div className="text-xs font-bold text-black/40 uppercase tracking-wider">ADDRESS</div>
+                  <div className="font-semibold text-black text-sm">Address : Sewarth Healthcare Pvt Ltd, Flat No. 106, First Floor, Block B, Datt Township, Bihari, Jabalpur (MP) – 482020, India</div>
                 </div>
               </div>
             </div>
