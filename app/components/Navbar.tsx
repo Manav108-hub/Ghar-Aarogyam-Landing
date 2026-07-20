@@ -52,6 +52,7 @@ export default function Navbar() {
             <Link href="/" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Home</Link>
             <Link href="/mission" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Our Mission</Link>
             <Link href="/faq" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">FAQs</Link>
+            <Link href="/check-your-city" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Check Your City</Link>
             <Link href="/contact" className="text-black hover:text-[#7CC043] font-semibold text-sm transition-colors">Contact</Link>
           </div>
 
@@ -74,6 +75,8 @@ export default function Navbar() {
             <Link href="/" onClick={() => setOpen(false)} className="block text-black font-semibold text-sm py-2 border-b" style={{ borderColor: "#a0d8ef" }}>Home</Link>
             <Link href="/mission" onClick={() => setOpen(false)} className="block text-black font-semibold text-sm py-2 border-b" style={{ borderColor: "#a0d8ef" }}>Our Mission</Link>
             <Link href="/faq" onClick={() => setOpen(false)} className="block text-black font-semibold text-sm py-2 border-b" style={{ borderColor: "#a0d8ef" }}>FAQs</Link>
+            <Link href="/check-your-city" onClick={() => setOpen(false)} className="block text-black font-semibold text-sm py-2 border-b" style={{ borderColor: "#a0d8ef" }}>Check Your City</Link>
+            <Link href="/contact" onClick={() => setOpen(false)} className="block text-black font-semibold text-sm py-2 border-b" style={{ borderColor: "#a0d8ef" }}>Contact</Link>
             <Link href="/subscription" onClick={() => setOpen(false)} className="block bg-[#FF9800] text-white text-center font-bold py-3 rounded-full text-sm">Join the Program</Link>
           </div>
         )}

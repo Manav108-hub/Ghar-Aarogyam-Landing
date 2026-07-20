@@ -33,7 +33,7 @@ export default function Footer() {
       </div>
 
       {/* Legal Disclaimer */}
-      <div className="border-t border-white/10 bg-black/30 py-8">
+      <div className="border-t border-white/10 py-8">
         <div className="max-w-7xl mx-auto px-5 md:px-20 text-[10px] text-gray-500 leading-relaxed">
           <p className="font-bold text-gray-400 mb-2">DISCLAIMER</p>
           <p className="mb-3">The information, educational materials, communications, and support content provided through this Patient Support Program (&quot;Ghar Aarogyam&quot;) are intended solely for patient education, disease awareness, treatment adherence support, and general health information purposes. This material is not intended to promote, prescribe, recommend, or replace professional medical advice, diagnosis, or treatment. Patients should always consult their treating physician or qualified healthcare professional regarding any medical condition, treatment decisions, medication use, or healthcare concerns.</p>
