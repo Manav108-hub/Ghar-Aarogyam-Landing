@@ -47,7 +47,7 @@ export default function FAQ() {
       {/* Hero */}
       <section className="py-16 text-center text-white" style={{ background: 'linear-gradient(135deg, #7CC043 0%, #BAEAF7 100%)' }}>
         <div className="max-w-3xl mx-auto px-5">
-          <h1 className="text-[#0056b3] text-4xl md:text-5xl font-black mb-4">Everything you'd want to Know</h1>
+          <h1 className="text-[#0056b3] text-4xl md:text-5xl font-black mb-4">Everything You'd Want To Know</h1>
           {/* <p className="text-white/85 text-lg">Clear, honest answers to your most common questions.</p> */}
         </div>
       </section>

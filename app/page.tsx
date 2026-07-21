@@ -31,7 +31,7 @@ export default function Home() {
           {/* Left Text */}
           <div className="w-full md:flex-1 space-y-12">
             <div>
-              <p className="text-xl md:text-2xl text-black">Welcome to Ghar Aarogyam programme</p>
+              <p className="text-xl md:text-2xl text-black">Welcome to <span className="text-[#7CC043] font-bold">Ghar </span><span className="text-[#FF9800] font-bold">Aarogyam</span> programme</p>
               <h2 className="text-2xl md:text-3xl font-bold text-black mt-2">...Empowering people to take ownership of their health.</h2>
             </div>
 
@@ -71,29 +71,29 @@ export default function Home() {
 
         {/* Green Bar below */}
         <div className="w-full py-6 px-5" style={{ backgroundColor: "#7CC043" }}>
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-4 gap-x-4 text-white italic font-semibold text-base md:text-lg">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-4 gap-x-4 text-white font-semibold text-base md:text-lg">
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <span className="material-symbols-outlined text-2xl md:text-3xl opacity-90">workspace_premium</span>
-              <span>Experience of more than 10 + years</span>
+              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>workspace_premium</span>
+              <span className="font-bold text-lg md:text-xl" style={{ color: "#2B56A0" }}>Experience of more than 10 + years</span>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3">
-              <span className="material-symbols-outlined text-2xl md:text-3xl opacity-90">groups</span>
-              <span className="text-center md:text-right">Provided Assitance To more than 1500 housholds</span>
+              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>groups</span>
+              <span className="font-bold text-center md:text-right" style={{ color: "#2B56A0" }}>Provided Assitance To more than <strong>1500 housholds</strong></span>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-3 md:ml-8 lg:ml-16">
-              <span className="material-symbols-outlined text-2xl md:text-3xl opacity-90">self_improvement</span>
-              <span className="text-center md:text-left">Peace of Mind - 100% among family members</span>
+              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>self_improvement</span>
+              <span className="font-bold text-lg md:text-xl text-center md:text-left" style={{ color: "#2B56A0" }}><strong>Peace of Mind</strong> - <strong>100%</strong> among family members</span>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3 md:mr-8 lg:mr-16">
-              <span className="material-symbols-outlined text-2xl md:text-3xl opacity-90">verified</span>
-              <span className="text-center md:text-right">Trust Factor - Uncompromised</span>
+              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>verified</span>
+              <span className="font-bold text-center md:text-right" style={{ color: "#2B56A0" }}><strong>Trust</strong> Factor - Uncompromised</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── 2. WHY CHOOSE US — bg: white ── */}
-      <section className="py-20 bg-white" id="why-us">
+      <section className="py-10 bg-white" id="why-us">
         <div className="max-w-7xl mx-auto px-5 md:px-20">
           <div className="text-center mb-14">
             <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>Why us…</div>
@@ -123,11 +123,11 @@ export default function Home() {
       </section>
 
       {/* ── 3. UNIQUE SERVICES — bg: #ECEFF1 ── */}
-      <section className="py-20" style={{ backgroundColor: "#ECEFF1" }} id="services">
+      <section className="py-10" style={{ backgroundColor: "#ECEFF1" }} id="services">
         <div className="max-w-6xl mx-auto px-5 md:px-10">
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>WHAT MAKES US DIFFERENT</div>
-            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>making healthcare simple, understandable and accessible for every family					</h2>
+            <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>WHAT MAKES US DIFFERENT...</div>
+            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Making Healthcare Smple, Understandable And Accessible For Every Family					</h2>
             {/* <p className="mt-3 text-black/60 text-sm max-w-2xl mx-auto">Healthcare ko simple, understandable aur accessible banana — har family ke liye.</p> */}
           </div>
 
@@ -136,7 +136,7 @@ export default function Home() {
             {[
               { img: "/service_1.png", tag: "Saral", title: "Know your Prescription Service" },
               { img: "/service_2.png", tag: "Sarthi", title: "Healthcare Expert Service" },
-              { img: "/service_3.png", tag: "Urja", title: "Nutrition Counselling Service" },
+              { img: "/Nutrition.jpeg", tag: "Urja", title: "Nutrition Counselling Service" },
               { img: "/carousel_2.png", tag: "Umang", title: "Clinical Counselling Service" },
               { img: "/carousel_3.png", tag: "Smriti", title: "Voice Medicine Reminder Service" },
               { img: "/carousel_1.png", tag: "Sakha", title: "Panic Button - Critical Incidence Response Service" },
@@ -168,16 +168,21 @@ export default function Home() {
 
       {/* ── 4. SCENARIOS — bg: #BAEAF7 ── */}
       <section className="py-20" style={{ backgroundColor: "#BAEAF7" }}>
+        <div className="flex items-center justify-center">
+          <div className="inline-block px-4 py-1 rounded-full text-center text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>My Story…</div>
+        </div>
         <div className="max-w-7xl mx-auto px-5 md:px-10">
           <div className="w-full border-2 border-black bg-white rounded-xl overflow-hidden flex flex-col shadow-lg">
 
             {/* Tabs Header */}
-            <div className="flex overflow-x-auto border-b-2 border-black" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-              {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => (
+            <div className="flex items-center justify-center gap-4 p-5 border-b-2 border-black bg-gray-50">
+              {Array.from({ length: 2 }, (_, i) => i + 1).map((num) => (
                 <button
                   key={num}
                   onClick={() => setActiveScenario(num)}
-                  className={`flex-1 min-w-[120px] py-4 px-2 text-center border-r-2 border-black last:border-r-0 font-bold text-sm md:text-base transition-colors ${activeScenario === num ? "bg-white text-[#2B56A0] border-b-4 border-b-[#FF9800]" : "bg-white text-[#0284c7] hover:bg-blue-50"
+                  className={`inline-flex items-center gap-1 font-bold px-8 py-2.5 rounded-full transition-all shadow-md text-sm md:text-base ${activeScenario === num
+                    ? "bg-[#FF9800] hover:bg-[#e68900] text-white"
+                    : "bg-white border-2 border-[#FF9800] text-[#FF9800] hover:bg-orange-50"
                     }`}
                 >
                   Scenario {num}
@@ -187,41 +192,32 @@ export default function Home() {
 
             {/* Scrollable Story Board */}
             <div className="w-full h-[600px] overflow-y-auto p-4 md:p-10 relative bg-gray-50 flex flex-col items-center">
-              <div className="text-center text-black/60 font-semibold mb-10 text-lg">
-                Story Board for Scenario {activeScenario} will scroll up and down
+
+              {/* Scenario storyboard image */}
+              <div className="w-full max-w-3xl mx-auto pb-10">
+                <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                  <Image
+                    src={`/scenario-${activeScenario}.jpeg`}
+                    alt={`Scenario ${activeScenario} storyboard`}
+                    width={896}
+                    height={504}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                </div>
               </div>
 
-              {/* Dummy tall content for the comic strip / story board images */}
-              <div className="w-full max-w-3xl mx-auto space-y-8 pb-10">
-                <div className="w-full aspect-video bg-white border-2 border-gray-200 rounded-2xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
-                  <span className="material-symbols-outlined text-5xl mb-2 text-gray-300">image</span>
-                  Scenario {activeScenario} - Image Part 1
-                </div>
-                <div className="w-full aspect-video bg-white border-2 border-gray-200 rounded-2xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
-                  <span className="material-symbols-outlined text-5xl mb-2 text-gray-300">image</span>
-                  Scenario {activeScenario} - Image Part 2
-                </div>
-                <div className="w-full aspect-video bg-white border-2 border-gray-200 rounded-2xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
-                  <span className="material-symbols-outlined text-5xl mb-2 text-gray-300">image</span>
-                  Scenario {activeScenario} - Image Part 3
-                </div>
-                <div className="w-full aspect-video bg-white border-2 border-gray-200 rounded-2xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
-                  <span className="material-symbols-outlined text-5xl mb-2 text-gray-300">image</span>
-                  Scenario {activeScenario} - Image Part 4
-                </div>
-              </div>
             </div>
-
           </div>
         </div>
       </section>
 
 
       {/* ── 5. TESTIMONIALS (scrolling) — bg: white ── */}
-      <section className="py-20 bg-white overflow-hidden">
+      <section className="py-10 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-5 md:px-20 text-center mb-12">
           <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>FAMILIES SPEAK</div>
-          <h2 className="text-3xl md:text-4xl font-black text-black">Real Stories, Real Experiences…<br /><span className="text-[#7CC043]">Real Stories, Real Experiences - help people feel more confident.</span></h2>
+          <h2 className="text-3xl md:text-4xl font-black"><span className="text-[#7CC043]">Real Stories, Real Experiences - Help People Feel More Confident</span></h2>
         </div>
         <div className="flex gap-6" style={{ display: "flex", width: "max-content", animation: "scroll 35s linear infinite", maskImage: "linear-gradient(to right, transparent 0, black 120px, black calc(100% - 120px), transparent 100%)", WebkitMaskImage: "linear-gradient(to right, transparent 0, black 120px, black calc(100% - 120px), transparent 100%)" }}>
           {[...testimonials, ...testimonials].map((t, i) => (
