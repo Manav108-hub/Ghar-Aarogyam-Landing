@@ -9,7 +9,7 @@ export default function FAQ() {
       a: "This program is for patients managing chronic conditions, their family caregivers, and anyone who wants structured support for their health journey without repeated hospital visits.",
     },
     {
-      q: "Does this program replace my regular doctor?",
+      q: "Does this replace my doctor?",
       a: "No. Ghar Aarogyam is a support and guidance program — not a replacement for your doctor. We work alongside your treating physician to help you follow your prescribed treatment plan more effectively.",
     },
     {
@@ -58,7 +58,7 @@ export default function FAQ() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-6 items-start">
             {faqs.map((faq, i) => (
               <details key={i} className="group cursor-pointer border-b border-gray-200">
-                <summary className="flex items-center justify-between py-5 font-bold text-[#0056b3] text-base">
+                <summary className="flex items-center justify-between min-h-[64px] py-4 font-bold text-[#0056b3] text-base">
                   <span className="flex items-center text-left pr-4">
                     {faq.q}
                   </span>

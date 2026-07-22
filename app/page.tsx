@@ -70,22 +70,22 @@ export default function Home() {
         </div>
 
         {/* Green Bar below */}
-        <div className="w-full py-6 px-5" style={{ backgroundColor: "#7CC043" }}>
+        <div className="w-full py-6 px-5" style={{ backgroundColor: "#8eff8aff" }}>
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-4 gap-x-4 text-white font-semibold text-base md:text-lg">
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>workspace_premium</span>
+              <span className="material-symbols-outlined shrink-0 text-5xl md:text-6xl" style={{ fontSize: "56px", color: "#000000ff" }}>workspace_premium</span>
               <span className="font-bold text-lg md:text-xl" style={{ color: "#2B56A0" }}>Experience of more than 10 + years</span>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3">
-              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>groups</span>
+              <span className="material-symbols-outlined shrink-0 text-5xl md:text-6xl" style={{ fontSize: "56px", color: "#000000ff" }}>groups</span>
               <span className="font-bold text-center md:text-right" style={{ color: "#2B56A0" }}>Provided Assitance To more than <strong>1500 housholds</strong></span>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-3 md:ml-8 lg:ml-16">
-              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>self_improvement</span>
+              <span className="material-symbols-outlined shrink-0 text-5xl md:text-6xl" style={{ fontSize: "56px", color: "#000000ff" }}>self_improvement</span>
               <span className="font-bold text-lg md:text-xl text-center md:text-left" style={{ color: "#2B56A0" }}><strong>Peace of Mind</strong> - <strong>100%</strong> among family members</span>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3 md:mr-8 lg:mr-16">
-              <span className="material-symbols-outlined text-3xl md:text-4xl" style={{ color: "#FF9800" }}>verified</span>
+              <span className="material-symbols-outlined shrink-0 text-5xl md:text-6xl" style={{ fontSize: "56px", color: "#000000ff" }}>verified</span>
               <span className="font-bold text-center md:text-right" style={{ color: "#2B56A0" }}><strong>Trust</strong> Factor - Uncompromised</span>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-5 md:px-10">
           <div className="text-center mb-12">
             <div className="inline-block px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-white" style={{ backgroundColor: "#FF9800" }}>WHAT MAKES US DIFFERENT...</div>
-            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Making Healthcare Smple, Understandable And Accessible For Every Family					</h2>
+            <h2 className="text-3xl md:text-4xl font-black" style={{ color: "#7CC043" }}>Making Healthcare Simple, Understandable And Accessible For Every Family					</h2>
             {/* <p className="mt-3 text-black/60 text-sm max-w-2xl mx-auto">Healthcare ko simple, understandable aur accessible banana — har family ke liye.</p> */}
           </div>
 

@@ -10,7 +10,7 @@ export default function Footer() {
             <Image src="/logo-icon.png" alt="Ghar Aarogyam" width={48} height={48} className="w-12 h-12 object-contain rounded-full bg-white p-0.5" />
             <span className="font-black text-xl">
               <span className="font-black text-xl"><span className="text-[#7CC043]">Ghar </span><span className="text-[#FF9800]">Aarogyam</span></span>
-              <span className="text-sm text-gray-400 p-2">by Sewath&trade;</span>
+              <span className="text-sm text-gray-400 p-2">by "Sewath"&trade;</span>
             </span>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-2">
